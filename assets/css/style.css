@@ -23,6 +23,7 @@ html body {
     left: 0;
     height: 46px;
     background-color: #000;
+    z-index: 1;
 }
 
 #nav {
@@ -101,9 +102,28 @@ html body {
 }
 
 #slider {
-    /* min-height: 1000px;
-    background-color: red; */
+    position: relative;
     margin-top: 46px;
+    padding-top: 50%;
+    background: url('/assets/img/slider/ny.jpg') top center / cover no-repeat;
+}
+
+#slider .text-content {
+    position: absolute;
+    bottom: 48px;
+    color: #fff;
+    width: 100%;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    text-align: center;
+}
+#slider .text-heading {
+    font-weight: 500;
+    font-size: 24px;
+}
+#slider .text-description {
+    font-size: 15px;
+    margin-top: 25px;
 }
 
 #content {}
