@@ -50,7 +50,7 @@ html body {
     background-color: #000;
     z-index: 1;
 }
-
+/* Navigation CSS */
 #nav {
     display: inline-block;
 }
