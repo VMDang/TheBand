@@ -8,6 +8,7 @@
     <title>The Band</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="/assets/fonts/themify-icons-font/themify-icons/themify-icons.css">
+    <!-- <script src="/assets/js/main.js"></script> -->
 </head>
 
 <body>
@@ -117,7 +118,7 @@
                                 <p class="place-desc">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </p>
-                                <a href="#" class="place-buy-btn">Buy Tickets</a>
+                                <button class="place-buy-btn js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="place-item">
@@ -132,7 +133,7 @@
                                 <p class="place-desc">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </p>
-                                <a href="#" class="place-buy-btn">Buy Tickets</a>
+                                <button class="place-buy-btn js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="place-item">
@@ -147,7 +148,7 @@
                                 <p class="place-desc">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </p>
-                                <a href="#" class="place-buy-btn">Buy Tickets</a>
+                                <button class="place-buy-btn js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="clear"></div>
@@ -168,6 +169,45 @@
 
         <div id="footer"></div>
     </div>
+
+    <div class="modal js-modal open">
+        <div class="modal-container js-modal-container">  
+            <div class="modal-close js-modal-close">
+                <i class="ti-close"></i>
+            </div>
+
+            <header class="modal-header">
+                <i class="ti-bag"></i>
+                Tickets
+            </header>
+
+            <div class="modal-body">
+                <label for="ticket-quantity" class="modal-label">
+                    <i class="ti-shopping-cart"></i>
+                    Tickets, $15 per person
+                </label>
+                <input type="text" id="ticket-quantity" class="modal-input" placeholder="How many?">
+
+                <label for="ticket-email" class="modal-label">
+                    <i class="ti-user"></i>
+                    Send To
+                </label>
+                <input type="email" id="ticket-email" class="modal-input" placeholder="Enter email">
+
+                <button id="buy-tickets">
+                    Pay
+                    <i class="ti-check"></i>
+                </button>
+            </div>
+            
+            <div class="modal-footer">
+                <p class="modal-help">
+                    Need <a href="">help</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
