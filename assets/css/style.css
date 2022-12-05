@@ -31,6 +31,7 @@ html body {
     font-size: 15px; 
 }
 
+/* Common */
 .clear {
     clear: both;
 }
@@ -39,6 +40,29 @@ html body {
     color: #fff !important;
 }
 
+.text-align {
+    text-align: center !important;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col {
+    float: left;
+    padding: 0 8px;
+}
+
+.col-third {
+    width: 50%;
+}
+
+.col-third {
+    width: 33.3333%;
+}
+
+/* Main */
 #main {}
 
 #header {
@@ -189,16 +213,6 @@ html body {
     /* overflow: hidden;    <--> use class="clear" */
 }
 
-#content .member-item {
-    float: left;
-    width: calc( 100% / 3 );
-    text-align: center;
-}
-
-#content .member-name {
-    
-} 
-
 #content .member-img {
     margin-top: 15px;
     width: 154px;
@@ -247,13 +261,8 @@ html body {
 /* Places CSS */
 
 .place-list {
-    margin: 32px -8px 48px -8px;
-}
-
-.place-item {
-    float: left;
-    width: 33.3333%;
-    padding: 0 8px;
+    margin-top: 32px;
+    margin-bottom: 48px;
 }
 
 .place-img {
