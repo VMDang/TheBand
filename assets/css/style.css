@@ -24,6 +24,7 @@
 }
 
 html {
+    scroll-behavior: smooth;
     font-family: Lato, sans-serif;
 }
 
@@ -49,17 +50,43 @@ html body {
     margin-right: -8px;
 }
 
+.row::after {
+    content: "";
+    display: block;
+    clear: both; 
+}
+
 .col {
     float: left;
     padding: 0 8px;
 }
 
-.col-third {
+.col-full{
+    width: 100%;
+}
+
+.col-half {
     width: 50%;
 }
 
 .col-third {
     width: 33.3333%;
+}
+
+.btn {
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: inline-block;
+    margin-top: 15px;
+    border: none;
+}
+
+.btn:hover {
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
 }
 
 /* Main */
@@ -177,7 +204,7 @@ html body {
 
 #content .content-section {
     width: 768px;
-    padding: 64px 0;
+    padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -262,7 +289,6 @@ html body {
 
 .place-list {
     margin-top: 32px;
-    margin-bottom: 48px;
 }
 
 .place-img {
@@ -291,20 +317,6 @@ html body {
 .place-desc {
     margin-top: 15px;
     line-height: 1.4;
-}
-
-.place-buy-btn {
-    color: #fff;
-    background-color: #000;
-    text-decoration: none;
-    padding: 8px 16px;
-    display: inline-block;
-    margin-top: 15px;
-}
-
-.place-buy-btn:hover {
-    color: #000;
-    background-color: #ccc;
 }
 
 .modal {
@@ -405,4 +417,61 @@ html body {
     }
 }
 
-#footer {}
+/* Contact */
+.contact-content{
+    margin-top: 48px;
+    line-height: 1.5;
+}
+
+.contact-info{
+    font-size: 18px;
+}
+
+.contact-info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.contact-form .btn-submit {
+    margin-top: 16px;
+    float: right;
+}
+
+.map-section img{
+    width: 100%;
+}
+
+/* Footer */
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer .social-list {
+    font-size: 24px;
+}
+
+#footer .social-list a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .copyright a:hover,
+#footer .social-list a:hover{
+    color: rgba(0, 0, 0, 0.4);
+}
+
+#footer .copyright {
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .copyright a{
+    color: rgba(0, 0, 0, 0.6);
+}

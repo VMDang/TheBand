@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Band</title>
+    <link rel="icon" href="./assets/img/garage-band.png" type="image/x-icon" />
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="/assets/fonts/themify-icons-font/themify-icons/themify-icons.css">
     <!-- <script src="/assets/js/main.js"></script> -->
@@ -18,30 +19,30 @@
             <!-- Navigation -->
             <ul id="nav">
                 <li>
-                    <a href="">Home</a>
+                    <a href="#">Home</a>
                 </li>
                 <li>
-                    <a href="">Band</a>
+                    <a href="#band">Band</a>
                 </li>
                 <li>
-                    <a href="">Tour</a>
+                    <a href="#tour">Tour</a>
                 </li>
                 <li>
-                    <a href="">Contact</a>
+                    <a href="#contact">Contact</a>
                 </li>
                 <li>
-                    <a href="">More
+                    <a href="#">More
                         <i class="nav-arrow-down ti-angle-down"></i>
                     </a>
                     <ul class="subnav">
                         <li>
-                            <a href="">Merchandise</a>
+                            <a href="#">Merchandise</a>
                         </li>
                         <li>
-                            <a href="">Extras</a>
+                            <a href="#">Extras</a>
                         </li>
                         <li>
-                            <a href="">Media</a>
+                            <a href="#">Media</a>
                         </li>
                     </ul>
                 </li>
@@ -62,7 +63,7 @@
 
         <div id="content">
             <!-- About section -->
-            <div class="content-section">
+            <div id="band" class="content-section">
                 <h2 class="section-heading">
                     The Band
                 </h2>
@@ -85,12 +86,11 @@
                         <p class="member-name">Name</p>
                         <img src="assets/img/band/bandmember.jpg" alt="Name" class="member-img">
                     </div> 
-                    <div class="clear"></div> 
                 </div>
             </div>
 
             <!-- Tour section -->
-            <div class="tour-section">
+            <div id="tour" class="tour-section">
                 <div class="content-section">
                     <h2 class="section-heading text-white-color">
                         Tour Dates
@@ -118,7 +118,7 @@
                                 <p class="place-desc">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </p>
-                                <button class="place-buy-btn js-buy-ticket">Buy Tickets</button>
+                                <button class="btn js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="col col-third">
@@ -133,7 +133,7 @@
                                 <p class="place-desc">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </p>
-                                <button class="place-buy-btn js-buy-ticket">Buy Tickets</button>
+                                <button class="btn js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="col col-third">
@@ -148,26 +148,64 @@
                                 <p class="place-desc">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </p>
-                                <button class="place-buy-btn js-buy-ticket">Buy Tickets</button>
+                                <button class="btn js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
-                        <div class="clear"></div>
                     </div>
                 </div>
             </div>
 
             <!-- Contact section -->
-            <div class="content-section">
+            <div id="contact" class="content-section">
                 <h2 class="section-heading">
                     Contact
                 </h2>
                 <p class="section-sub-heading">
                     Fan? Drop a note!
                 </p>
+
+                <div class="row contact-content">
+                    <div class="col col-half contact-info">
+                        <p><i class="ti-location-pin"></i> Chicago, US</p>
+                        <p><i class="ti-mobile"></i>Phone: +00 151515</p>
+                        <p><i class="ti-email"></i> Email: mail@mail.com</p>
+                    </div>
+                    <div class="col col-half contact-form">
+                        <form action="" method="POST">
+                            <div class="row">
+                                <div class="col col-half">
+                                    <input type="text" name="name" id="" placeholder="Name" required class="form-control">
+                                </div>
+                                <div class="col col-half">
+                                    <input type="text" name="email" id="" placeholder="Email" required class="form-control">
+                                </div>
+                            </div>
+                            <div class="row" style="margin-top: 8px;">
+                                <div class="col col-full">
+                                    <input type="text" name="message" id="" placeholder="Message" required class="form-control" >
+                                </div>
+                            </div>
+                            <input class="btn btn-submit" type="submit" value="SEND">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="map-section">
+                <img src="./assets/img/map.jpg" alt="Map">
             </div>
         </div>
 
-        <div id="footer"></div>
+        <div id="footer">
+            <div class="social-list">
+                <a href=""><i class="ti-facebook"></i></a>
+                <a href=""><i class="ti-instagram"></i></a>
+                <a href=""><i class="ti-youtube"></i></a>
+                <a href=""><i class="ti-pinterest"></i></a>
+                <a href=""><i class="ti-twitter"></i></a>
+                <a href=""><i class="ti-linkedin"></i></a>
+            </div>
+            <p class="copyright">Powered by <a href="">w3.css</a></p>
+        </div>
     </div>
 
     <div class="modal js-modal open">
@@ -199,7 +237,7 @@
                     <i class="ti-check"></i>
                 </button>
             </div>
-            
+
             <div class="modal-footer">
                 <p class="modal-help">
                     Need <a href="">help</a>
