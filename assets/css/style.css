@@ -77,10 +77,14 @@ html body {
     color: #fff;
     background-color: #000;
     text-decoration: none;
-    padding: 8px 16px;
+    padding: 11px 16px;
     display: inline-block;
     margin-top: 15px;
     border: none;
+    font-size: 15px;
+    text-align: center;
+    appearance: none;
+    -webkit-appearance: none;
 }
 
 .btn:hover {
@@ -198,6 +202,7 @@ html body {
     position: relative;
     margin-top: 46px;
     padding-top: 50%;
+    background: url('../img/slider/ny.jpg') top center / cover no-repeat;
 }
 
 #slider .text-content {
@@ -246,7 +251,7 @@ html body {
 #content .about-text {
     margin-top: 25px;
     text-align: justify;
-    line-height: 1.4;
+    line-height: 1.5;
     margin-bottom: 15px;
 }
 
@@ -336,7 +341,7 @@ html body {
 
 .place-desc {
     margin-top: 15px;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
 .modal {
@@ -450,6 +455,15 @@ html body {
 .contact-info i[class*="ti-"] {
     width: 30px;
     display: inline-block;
+}
+
+.contact-info a {
+    color: #00e;
+    opacity: 0.8;
+}
+
+.contact-info a:hover {
+    opacity: 1;
 }
 
 .contact-form .form-control {
