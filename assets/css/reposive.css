@@ -20,6 +20,7 @@
 
     #header {
         overflow: hidden;
+        height: 54px;
     }
 
     #header .mobile-menu-btn {
